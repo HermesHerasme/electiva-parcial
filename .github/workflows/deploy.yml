@@ -18,5 +18,5 @@ jobs:
 
       - name: Deploy to Surge
         env:
-          SURGE_TOKEN: ${{ secrets.782d02207132e8efd5432f7fd18f2c57 }}
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
         run: surge --project ./ --domain hermesalberto-prueba.surge.sh --token $SURGE_TOKEN
